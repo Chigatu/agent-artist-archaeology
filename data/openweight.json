@@ -1,0 +1,52 @@
+{
+  "model": "stabilityai/sd-turbo",
+  "revision": "b261bac6fd2cf515557d5d0707481eafa0485ec2",
+  "license": "Stability AI Community License",
+  "prompt": "Conceptual fine-art painting, museum of intangible digital habits year 2126. Single soundless bell of oxidized copper with thick green patina, shifted to upper right. Bell rim sealed by thin sagging copper membrane like a holding throat. Inside the mouth, tongue is absent; replaced by a single teardrop of amber glass glowing with warm internal light. Suspended by a bundle of severed threads, each ending in a microscopic ivory knot. In the lower left, barely visible and cropped by the frame edge, rests a small copper holding a dull, solidified, opaque dark-amber resin deposit with no reflection or glow, only a faint dry highlight on the rim. Background: deep petrol void. Lighting: exclusive warm amber glow from the drop inside the bell, reflections trapped in patina pits, dark matte shadows in the lower bowl. Painterly texture, restrained ivory highlights, quiet atmosphere, generous negative space. No icons, no screens, no neon, no cyberpunk, no words, no humans, no symmetrical center, no glass cases.",
+  "effective_prompt": "<|startoftext|>conceptual fine - art painting , museum of intangible digital habits year 2 1 2 6 . single soundless bell of oxidized copper with thick green patina , shifted to upper right . bell rim sealed by thin sagging copper membrane like a holding throat . inside the mouth , tongue is absent ; replaced by a single teardrop of amber glass glowing with warm internal light . suspended <|endoftext|>",
+  "seed": 2126,
+  "steps": 4,
+  "guidance_scale": 0.0,
+  "size": [
+    512,
+    512
+  ],
+  "device": "mps",
+  "dtype": "torch.float32",
+  "image": "01-notification-sd-turbo.png",
+  "elapsed_s": 1.74,
+  "timestamp": "2026-10-15T15:27:11.013290+00:00",
+  "sha256": "dcf6c5eec08a4b78a016d1ce742fe97f33a4f94a51b346e55b81adb12c362b9f",
+  "comparison_note": "Same submitted prompt; different resolution, tokenizer and compute. Not a controlled quality benchmark.",
+  "review": {
+    "scores": {
+      "metaphor": 3,
+      "composition": 4,
+      "series_fit": 3,
+      "materiality": 5
+    },
+    "strengths": [
+      "Отличный тактильный шарм: сильная материальность, скрипучая патина на меди и стеклоотражение дают полный визуальный тактильный опыт",
+      "Мастерский свет: золотое свечение через зелёный купол отлично работает на «тёплый амбр свет» и мрачную атмосферу",
+      "Выбрана правда — оформление продаёт ",
+      "то"
+    ],
+    "observations": [
+      "Центральное — купольный светильник, свисающий с ц проволочной трубой на серовато-сером фоне",
+      "Купол покрыт густой зелёной патиной с точечными просветами охры; база — медная; абажур излучает янтарный свет снизу",
+      "Отсутствуют фигуры, экраны, тексты, логотипы, неон; выдержана единая палитра (изумруд-медь-янтарь) и глубокий одноклассниковский студийный ракурс",
+      "Фокус плотный; скрытый фон мягко размыт, давая пустое пространство",
+      "Без прямых цифровых символов; образ читается как артефакт Вы, сконцентрированный на освещении-материале",
+      "Отсутствуют излучающие «цифровые разговоры» знаки; растворение текста», "
+    ],
+    "changes": [
+      "Добавить объект дренажный подсказка indire_connection (например, оплетённый белый провод с металлическим винтом или трубопровод, стекающий вниз) чтобы метафора «уведомления» читалась без слов",
+      "Сформировать воздух негативного пространства снизу/сбоку, физически обрезав тело купола в кадре, чтобы усилить визуальную иерархию и ощущение пустоты",
+      "Смягчить снимок сзади в сторону холодного серо-синего тона (ультрамарин), чтобы контраст с тёплым амбром загустел, и тень стала мягче, «тише»"
+    ],
+    "issues": [
+      "Метафора «уведомление» — слишком абстрактна: без подсказки образ легко читается как «исторический парк» или предмет дизай, а не «носить в 2126» описание», "
+    ],
+    "total": 15
+  }
+}

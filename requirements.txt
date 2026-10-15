@@ -1,0 +1,6 @@
+openai>=1.100,<4
+python-dotenv>=1.1,<2
+Pillow>=11,<13
+nbformat>=5.10,<6
+nbclient>=0.10,<1
+ipykernel>=6,<8

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Археология будущего: четыре картины, созданные в диалоге куратора, художника и визуального критика. Лабораторная по Yandex AI Studio.">
+  <meta name="theme-color" content="#183d3e">
+  <title>Археология будущего — следы присутствия</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#collection">Перейти к картинам</a>
+  <header class="masthead">
+    <a class="wordmark" href="#">МУЗЕЙ / 2126</a>
+    <nav aria-label="Основная навигация">
+      <a href="#collection">Экспонаты</a><a href="#process">Метод</a><a href="#team">Команда</a>
+    </nav>
+    <span class="edition">ВЫСТАВКА № 01</span>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <p class="eyebrow">МНОГОАГЕНТНОЕ ИСКУССТВО · YANDEX AI STUDIO</p>
+        <h1 id="title">Археология<br><em>будущего</em></h1>
+        <p class="hero-intro">Что останется от наших цифровых привычек,<br>когда исчезнут экраны?</p>
+        <div class="hero-bottom"><span>Следы присутствия<br>Четыре экспоната воображаемого музея</span><a class="round-link" href="#collection" aria-label="Смотреть коллекцию">↘</a></div>
+      </div>
+      <figure class="hero-art"><img id="hero-image" alt="Картина из коллекции «Археология будущего»" fetchpriority="high"><figcaption><span>МАТЕРИАЛЬНОЕ / НЕМАТЕРИАЛЬНОЕ</span><span>2126</span></figcaption></figure>
+    </section>
+    <section class="statement section-grid" aria-labelledby="statement-title">
+      <p class="eyebrow">КУРАТОРСКОЕ ВЫСКАЗЫВАНИЕ</p>
+      <div><h2 id="statement-title">У привычек тоже<br>есть <em>посмертие.</em></h2><p>Уведомления, непрочитанные сообщения, облачные воспоминания и отменённые маршруты. Мы представили их музейными находками: у каждой появились вес, поверхность и тень.</p><p>Замысел рождается в споре двух языковых агентов. Третий смотрит на настоящую картину и предлагает изменения. Здесь можно увидеть весь процесс — включая версии, которые не стали финальными.</p></div>
+    </section>
+    <section id="collection" class="collection" aria-labelledby="collection-title">
+      <div class="section-heading"><div><p class="eyebrow">ПОСТОЯННАЯ КОЛЛЕКЦИЯ</p><h2 id="collection-title">Четыре следа.</h2></div><span class="small-label">01 — 04 / ЦИФРОВАЯ ПАМЯТЬ</span></div>
+      <div id="paintings" aria-live="polite"><p class="loading">Загружаем экспонаты…</p></div>
+      <noscript><p>Для переключения версий и просмотра диалогов включите JavaScript. Исходные картины и журналы доступны в каталоге assets и файле gallery.json.</p></noscript>
+    </section>
+    <section id="process" class="process section-grid" aria-labelledby="process-title">
+      <div><p class="eyebrow">МЕТОД</p><h2 id="process-title">Картина —<br>это <em>разговор.</em></h2></div>
+      <div>
+        <ol class="steps"><li><span>01</span><div><h3>Куратор задаёт смысл</h3><p>Предлагает метафору. Художник переводит её в композицию, а куратор оспаривает слабое место.</p></div></li><li><span>02</span><div><h3>Художник собирает образ</h3><p>Фиксирует материал, свет и отношения объектов. Image Generation API создаёт первую версию.</p></div></li><li><span>03</span><div><h3>Критик действительно смотрит</h3><p>VLM получает изображение, описывает видимые детали и предлагает конкретные изменения. Художник создаёт вторую версию.</p></div></li><li><span>04</span><div><h3>Сохраняется лучший вариант</h3><p>Четыре критерия по 1–5 баллов. Выбирается максимальная сумма; при равенстве — ранняя версия. Все исходники остаются открыты.</p></div></li></ol>
+        <p class="method-note">Оценки критика субъективны. Новая версия может оказаться слабее первой. Промпты, изображения и ответы API сохраняются без ручной подмены.</p>
+      </div>
+    </section>
+    <section id="openweight" class="openweight" hidden aria-labelledby="openweight-title">
+      <div class="section-heading"><div><p class="eyebrow">ДОПОЛНИТЕЛЬНЫЙ ЭКСПЕРИМЕНТ</p><h2 id="openweight-title">Другой почерк,<br><em>тот же замысел.</em></h2></div><span class="small-label">YANDEX ART × SD-TURBO</span></div>
+      <div id="comparison" class="comparison"></div>
+      <p class="method-note">Одинаковый отправленный промпт, разные разрешения, токенизаторы и вычислительный бюджет. Это иллюстрация различий двух рендереров, а не контролируемый бенчмарк. SD-Turbo запущена локально из открытых весов Hugging Face. Powered by Stability AI.</p>
+      <details><summary>Параметры и фактический промпт SD-Turbo</summary><pre id="openweight-data"></pre></details>
+    </section>
+    <section id="team" class="team section-grid" aria-labelledby="team-title">
+      <div><p class="eyebrow">АВТОРЫ ПРОЕКТА</p><h2 id="team-title">Люди<br>за <em>агентами.</em></h2></div>
+      <div><ul id="team-list"></ul><p class="team-note">Лабораторная №1 «АХ: Агент-художник». Код, галерея и пояснения подготовлены с помощью кодинг-агента Codex. Использование ИИ и исходные инструкции задокументированы в отчёте.</p><a class="text-link" href="gallery.json" download>Скачать полный журнал в JSON ↗</a></div>
+    </section>
+  </main>
+  <footer><span>АРХЕОЛОГИЯ БУДУЩЕГО © 2026</span><span>ИССЛЕДОВАНИЕ / ИСКУССТВО / ДИАЛОГ</span><a href="https://github.com/MAILabs-Education/Agent_Artist">Задание курса ↗</a></footer>
+  <dialog id="lightbox" aria-label="Картина в полном размере"><button id="close-lightbox" type="button" aria-label="Закрыть просмотр">Закрыть ×</button><img alt=""><p></p></dialog>
+</body>
+</html>

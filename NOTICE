@@ -1,0 +1,8 @@
+Powered by Stability AI
+
+The optional local renderer is stabilityai/sd-turbo, revision
+b261bac6fd2cf515557d5d0707481eafa0485ec2, obtained from Hugging Face.
+This Stability AI Model is licensed under the Stability AI Community License,
+Copyright © Stability AI Ltd. All Rights Reserved.
+See licenses/STABILITY_AI_LICENSE.md. Model weights are not redistributed.
+The model was not fine-tuned or modified; inference settings are recorded in data/openweight.json.
